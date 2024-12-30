@@ -35,6 +35,7 @@
       }
       h3 {
         font-weight: 600;
+        font-size: 1.5em;
       }
       .btn,
       p {
@@ -44,7 +45,6 @@
       }
       p {
         color: #a6a6a6;
-        text-align: justify;
       }
       .btn {
         color: #ffffff;
@@ -92,6 +92,19 @@
       img {
         border-radius: 12px;
       }
+      .image-container {
+        width: 100%;
+        height: 200px; /* Adjust the height as needed */
+        overflow: hidden;
+        position: relative;
+      }
+
+      .image-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 0 30%;
+      }
     </style>
   </head>
   <body>
@@ -129,7 +142,7 @@
         </div>
       </div>
       <!-- BIO -->
-      <div class="row">
+      <div class="row mb-4">
         <p>
           <span class="lead">Hi there!</span> Thanks for stopping by. I’m Dhika,
           a software engineer from the crowded city of Jakarta. Feel free to
@@ -137,7 +150,7 @@
           development!
         </p>
       </div>
-      <div class="my-4">
+      <div class="row mb-4">
         <div class="row">
           <h3>Experience</h3>
         </div>
@@ -177,8 +190,126 @@
                 <p class="card-text">PT Indonesia Indicator</p>
                 <p class="card-text">2015 - 2016</p>
                 <p>
-                  Built internal web apps for several government organizations.
+                  Built internal web apps for several government organizations,
+                  including application for scheduling and hierarchy-aware
+                  messaging system.
                 </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-4">
+        <div class="row">
+          <h3>Portfolio</h3>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-3 mb-3">
+            <div class="mt-3 card-container">
+              <div class="col-md-12">
+                <div class="image-container">
+                  <img
+                    src="https://play-lh.googleusercontent.com/bEVlWiZK_zIrfZHQ1a7sxiVyHQy0OdHaVjLSuZmM6g5Ru1TI6HBAn2RuoUXO_DobVx9Z=w2560-h1440-rw"
+                    alt="Rumah123 App"
+                  />
+                </div>
+              </div>
+              <div class="col-md-12 card-body">
+                <p class="my-4 card-title">Rumah123</p>
+                <p>
+                  Rumah123 mobile apps offers you an easy way to search for
+                  properties in Indonesia. Find over 1,600,000 properties for
+                  sale and for rent, including houses, apartments, shops,
+                  commercial properties and land.
+                </p>
+              </div>
+              <div class="d-flex justify-content-between mt-3">
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.rumah123&hl=id"
+                  class="btn btn-outline-dark mr-2"
+                  target="_blank"
+                >
+                  <i class="fab fa-google-play"></i> Google Play
+                </a>
+                <a
+                  href="https://apps.apple.com/id/app/rumah123/id644854546"
+                  class="btn btn-outline-dark"
+                  target="_blank"
+                >
+                  <i class="fab fa-apple"></i> App Store
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 mb-3">
+            <div class="mt-3 card-container">
+              <div class="col-md-12">
+                <div class="image-container">
+                  <img
+                    src="https://play-lh.googleusercontent.com/oFH3S9MmzYq_VxSjU7WvbMVZpoEbbs_69mQCLSniSoIgBd_RdeLddTJ2ulIwU4BNQJPV=w2560-h1440-rw"
+                    alt="Sumut Mobile"
+                  />
+                </div>
+              </div>
+              <div class="col-md-12 card-body">
+                <p class="my-4 card-title">Sumut Mobile</p>
+                <p>
+                  Sumut Mobile is an application provided by Bank Sumut that
+                  allows you to perform banking transactions anytime and
+                  anywhere using your mobile phone with ease.
+                </p>
+              </div>
+              <div class="d-flex justify-content-between mt-3">
+                <a
+                  href="https://play.google.com/store/search?q=sumut%20mobile&c=apps&hl=id"
+                  class="btn btn-outline-dark mr-2"
+                  target="_blank"
+                >
+                  <i class="fab fa-google-play"></i> Google Play
+                </a>
+                <a
+                  href="https://apps.apple.com/id/app/sumut-mobile/id1089844839?l=id"
+                  class="btn btn-outline-dark"
+                  target="_blank"
+                >
+                  <i class="fab fa-apple"></i> App Store
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 mb-3">
+            <div class="mt-3 card-container">
+              <div class="col-md-12">
+                <div class="image-container">
+                  <img
+                    src="https://play-lh.googleusercontent.com/RFQlufj2Oehgk18BfLOXZLmLBgiVLhzY49kPCIrxX11ueEdjSYj-BUNVOzcu1Zqfhqg=w2560-h1440-rw"
+                    alt="Rumah123 App"
+                  />
+                </div>
+              </div>
+              <div class="col-md-12 card-body">
+                <p class="my-4 card-title">Bank NTB Syariah QR Merchant</p>
+                <p>
+                  Bank NTB Syariah Merchant is mobile apps used for processing
+                  QRIS-based transactions, designed for merchants of Bank NTB
+                  Syariah.
+                </p>
+              </div>
+              <div class="d-flex justify-content-between mt-3">
+                <a
+                  href="https://play.google.com/store/apps/details?id=mbank.ntbmerchant&hl=id"
+                  class="btn btn-outline-dark mr-2"
+                  target="_blank"
+                >
+                  <i class="fab fa-google-play"></i> Google Play
+                </a>
+                <a
+                  href="https://apps.apple.com/us/app/ntb-syariah-merchant/id1585790207?platform=iphone"
+                  class="btn btn-outline-dark"
+                  target="_blank"
+                >
+                  <i class="fab fa-apple"></i> App Store
+                </a>
               </div>
             </div>
           </div>
