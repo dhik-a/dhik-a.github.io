@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -10,11 +10,13 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -47,9 +49,44 @@
       .btn {
         color: #ffffff;
       }
+      .btn-custom {
+        width: 100%;
+        text-align: left;
+      }
+      @media (min-width: 768px) {
+        .btn-custom {
+          width: auto;
+          min-width: 150px;
+          text-align: center;
+        }
+      }
       .lead {
         font-size: 1.5em;
         font-weight: 800;
+        color: #ffffff;
+      }
+      .card {
+        background-color: #000000;
+        color: #ffffff;
+        border-color: #ffffff;
+      }
+      .card-container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+      }
+      .card-body {
+        flex: 1;
+      }
+      .card-title {
+        font-weight: 900;
+        margin-bottom: 0;
+        font-size: 1.1em;
+        text-align: left;
+      }
+      .card-text {
+        margin-top: 0;
+        font-weight: 100;
         color: #ffffff;
       }
       img {
@@ -63,10 +100,31 @@
       <div class="row">
         <div class="d-flex align-items-center mb-4">
           <h1 class="text-white">Dhika Haidar</h1>
-          <div class="px-4">
-            <a href="#" class="btn btn-dark me-2 mb-2">Github</a>
-            <a href="#" class="btn btn-dark me-2 mb-2">LinkedIn</a>
-            <a href="#" class="btn btn-dark mb-2">Email</a>
+          <div class="row px-4">
+            <div class="col-12 col-md-4 mb-2 d-flex justify-content-center">
+              <a
+                href="https://github.com/dhik-a"
+                class="btn btn-dark btn-custom"
+              >
+                <i class="fab fa-github"></i> Github
+              </a>
+            </div>
+            <div class="col-12 col-md-4 mb-2 d-flex justify-content-center">
+              <a
+                href="https://www.linkedin.com/in/anhafad/"
+                class="btn btn-dark btn-custom"
+              >
+                <i class="fab fa-linkedin"></i> Linkedin
+              </a>
+            </div>
+            <div class="col-12 col-md-4 mb-2 d-flex justify-content-center">
+              <a
+                href="mailto:andhikahaidarf@gmail.com"
+                class="btn btn-dark btn-custom"
+              >
+                <i class="fas fa-envelope"></i> Email
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -74,63 +132,54 @@
       <div class="row">
         <p>
           <span class="lead">Hi there!</span> Thanks for stopping by. I’m Dhika,
-          a software engineer from the crowded city of Jakarta. Over the years,
-          I’ve worked on diverse projects ranging from mobile banking solutions
-          to online property marketplace, and I’m always eager to take on the
-          next big challenge. When I’m not coding, you’ll probably find me
-          tinkering with ideas for an app, exploring the latest tech, or
-          relaxing with a good cup of coffee. Feel free to contact me if you
-          have interesting opportunity for software development!
+          a software engineer from the crowded city of Jakarta. Feel free to
+          contact me if you have interesting opportunity for software
+          development!
         </p>
       </div>
-      <!-- PORTFOLIO -->
-      <div class="mt-4">
+      <div class="my-4">
         <div class="row">
-          <h3>Portfolio</h3>
+          <h3>Experience</h3>
         </div>
-        <div class="row gx-2">
-          <div class="col">
-            <div class="col-12 my-4">
-              <img src="https://placehold.co/400x160" />
-            </div>
-            <div class="mt-2 px-2">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Praesent auctor efficitur risus ut ultrices.
-              </p>
-            </div>
-          </div>
-          <div class="col">
-            <div class="col-12 my-4">
-              <img src="https://placehold.co/400x160" />
-            </div>
-            <div class="mt-2">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Praesent auctor efficitur risus ut ultrices.
-              </p>
+        <div class="row">
+          <div class="col-12 col-md-4 mb-3">
+            <div class="card card-outline mt-3 card-container">
+              <div class="card-body">
+                <p class="card-title">Senior Mobile Engineer</p>
+                <p class="card-text">99 Group (99.co | Rumah123 | SRX)</p>
+                <p class="card-text">2023 - Present</p>
+                <p>
+                  Responsible for the development of mobile apps for Rumah123,
+                  one of the largest online marketplace for property in
+                  Indonesia.
+                </p>
+              </div>
             </div>
           </div>
-          <div class="col">
-            <div class="col-12 my-4">
-              <img src="https://placehold.co/400x160" />
-            </div>
-            <div class="mt-2">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Praesent auctor efficitur risus ut ultrices.
-              </p>
+          <div class="col-12 col-md-4 mb-3">
+            <div class="card card-outline mt-3 card-container">
+              <div class="card-body">
+                <p class="card-title">Software Developer (Mobile & Web)</p>
+                <p class="card-text">PT eMobile Indonesia</p>
+                <p class="card-text">2016 - 2023</p>
+                <p>
+                  Shipped multiple mobile banking apps and web admin dashboard
+                  for Indonesia's local banks like Bank Sumatera Utara, Bank
+                  Kalimantan Tengah, Bank NTB Syariah, etc.
+                </p>
+              </div>
             </div>
           </div>
-          <div class="col">
-            <div class="col-12 my-4">
-              <img src="https://placehold.co/400x160" />
-            </div>
-            <div class="mt-2">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Praesent auctor efficitur risus ut ultrices.
-              </p>
+          <div class="col-12 col-md-4 mb-3">
+            <div class="card card-outline mt-3 card-container">
+              <div class="card-body">
+                <p class="card-title">Full-stack Developer</p>
+                <p class="card-text">PT Indonesia Indicator</p>
+                <p class="card-text">2015 - 2016</p>
+                <p>
+                  Built internal web apps for several government organizations.
+                </p>
+              </div>
             </div>
           </div>
         </div>
